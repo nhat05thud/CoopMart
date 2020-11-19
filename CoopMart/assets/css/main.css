@@ -1,0 +1,112 @@
+﻿#header {
+    background: #ed1c24;
+    padding: 10px 0;
+}
+#logo img {
+    width: 190px;
+    max-width: 100%;
+}
+.left-header, .right-header {
+    padding: 0 15px;
+}
+    .left-header{
+        width: 230px;
+    }
+    .right-header {
+        width: calc(100% - 230px);
+    }
+#main-search {
+    position: relative;
+}
+#main-search input[type="text"] {
+    padding: 5px 40px 5px 15px;
+    height: 40px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+    #main-search input[type="submit"] {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border: none;
+        background: #000;
+    }
+    #right-list {
+        font-size: 0;
+    }
+        #right-list > li {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 15px;
+            font-size: 15px;
+            color: #fff;
+        }
+        #right-list > li a {
+            color: #fff;
+        }
+            #right-list > li a:hover,
+            #right-list > li .visible-cart:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+    #right-list > li.sign a:not(:last-child):after {
+        content: "/";
+        padding: 0 5px;
+    }
+.main-banner {
+    margin-top: 4px;
+}
+.banner-left,
+.banner-right {
+    display: inline-block;
+    vertical-align: top;
+}
+.banner-left {
+    width: 225px;
+}
+    .banner-left > ul > li {
+    }
+        .banner-left > ul > li > a {
+            display: block;
+            padding: 7px 10px;
+            position: relative;
+            color: #000;
+            background: #ddd;
+        }
+        .banner-left > ul > li > a svg {
+            position: absolute;
+            right: 5px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    .banner-left > ul ul > li > a {
+        display: block;
+        color: #4a4a4a;
+        padding: 7px 10px;
+        border-bottom: 1px dotted #ccc;
+    }
+    .banner-left > ul a:hover {
+        color: red;
+    }
+    .banner-right {
+        width: calc(100% - 230px);
+    }
+    .banner-right .box-slide,
+    .banner-right .box-ads {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .banner-right .box-slide {
+        width: calc(100% - 230px);
+    }
+    .banner-right .box-ads {
+        width: 225px;
+    }
+    .banner-right .box-ads .item:not(:last-child) {
+        margin-bottom: 4px;
+    }

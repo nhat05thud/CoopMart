@@ -1,0 +1,119 @@
+﻿:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #363636;
+}
+
+ul, li, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+a:visited, a:focus {
+    outline: none;
+}
+
+p {
+    margin: 0;
+}
+
+#wrapper {
+    overflow: hidden;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#wrapper-in {
+    background: #fff;
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.clr {
+    clear: both;
+}
+
+.custom__width {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 0 15px;
+}
+
+.wrap-content p {
+    margin-bottom: 10px;
+}
+
+.wrap-content img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+}
+
+.wrap-content table {
+    width: 100% !important;
+    margin-bottom: 15px;
+    border-collapse: collapse !important;
+    border-spacing: 0;
+}
+
+    .wrap-content table th, .wrap-content table td {
+        padding: 10px;
+        text-align: center;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, .08);
+        border-style: solid;
+        vertical-align: middle;
+    }
+
+    .wrap-content table tr:nth-of-type(2n) {
+        background: rgba(0, 0, 0, .02);
+    }
+
+.owl-carousel .owl-stage-outer {
+    width: 100%;
+}
+/*=========== scroll to top ==========*/
+.scroll-to-top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    display: none;
+    background: #333 url("/images/scrolltop.png") no-repeat scroll center center;
+    z-index: 9999999;
+    text-align: center;
+    display: none;
+    vertical-align: middle;
+}
+
+    .scroll-to-top i {
+        font-size: 30px;
+        color: #fff;
+        line-height: 35px;
+    }
