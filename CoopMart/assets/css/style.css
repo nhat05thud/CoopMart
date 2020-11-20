@@ -15,6 +15,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #363636;
+    background: #f1f0f1;
 }
 
 ul, li, ol {
@@ -105,7 +106,7 @@ p {
     bottom: 50px;
     right: 10px;
     display: none;
-    background: #333 url("/images/scrolltop.png") no-repeat scroll center center;
+    background: #333 url("/assets/images/scrolltop.png") no-repeat scroll center center;
     z-index: 9999999;
     text-align: center;
     display: none;

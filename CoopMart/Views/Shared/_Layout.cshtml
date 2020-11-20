@@ -27,7 +27,12 @@
                             <div class="col-md-6">
                                 <div id="main-search">
                                     <input type="text" value="" placeholder="Nhập tên sản phẩm, mã sản phẩm, từ khóa cần tìm..." />
-                                    <input type="submit" value="" />
+                                    <button type="submit">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -55,7 +60,55 @@
             </div>
         </header>
         @RenderBody()
+        <footer>
+            <div class="container">
+                <div id="footer">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Liên hệ với chúng tôi</h4>
+                            <ul>
+                                <li>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                                    </svg>
+                                    <div class="content">
+                                        <b>0914.268.535 - 0961.214.914</b>
+                                        <p>Giờ làm việc: Thứ 2 -> thứ 7 từ <b>8:00</b> đến <b>21:00</b> | Chủ Nhật từ <b>8:30</b> đến <b>17:30</b></p>
+                                    </div>
+                                </li>
+                                <li class="home">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                    </svg>
+                                    <div class="content">
+                                        <b>HOA BAN FOOD™</b>
+                                        <p>Nhà số 7, Khu liền kề Minori, 67A Trương Định, Quận Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Facebook</h4>
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0" nonce="mix4uW9d"></script>
+                            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Youtube</h4>
+                            <script src="https://apis.google.com/js/platform.js"></script>
+                            <div class="g-ytsubscribe" data-channel="HoaBanFood" data-layout="full" data-count="default"></div>
+                            <div class="g-ytsubscribe" data-channelid="UCiKlHF_9U4OnunGzsQysJYA" data-layout="full" data-count="default"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="copyright" class="text-center">
+                    <p>Copyright 2020 © <a href="#">HOA BAN FOOD™</a></p>
+                </div>
+            </div>
+        </footer>
     </div>
+    <a href="#" class="scroll-to-top"></a>
     <script src="~/assets/scripts/bootstrap.min.js"></script>
     <script src="~/assets/scripts/owl.carousel.min.js"></script>
     <script src="~/assets/scripts/jquery.main.js"></script>

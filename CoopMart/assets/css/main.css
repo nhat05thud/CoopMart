@@ -2,29 +2,36 @@
     background: #ed1c24;
     padding: 10px 0;
 }
+
 #logo img {
     width: 190px;
     max-width: 100%;
 }
+
 .left-header, .right-header {
     padding: 0 15px;
 }
-    .left-header{
-        width: 230px;
-    }
-    .right-header {
-        width: calc(100% - 230px);
-    }
+
+.left-header {
+    width: 230px;
+}
+
+.right-header {
+    width: calc(100% - 230px);
+}
+
 #main-search {
     position: relative;
 }
-#main-search input[type="text"] {
-    padding: 5px 40px 5px 15px;
-    height: 40px;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-    #main-search input[type="submit"] {
+
+    #main-search input[type="text"] {
+        padding: 5px 40px 5px 15px;
+        height: 40px;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    #main-search button[type="submit"] {
         position: absolute;
         width: 40px;
         height: 40px;
@@ -33,43 +40,53 @@
         bottom: 0;
         margin: auto;
         border: none;
-        background: #000;
+        background: none;
     }
-    #right-list {
-        font-size: 0;
+
+#right-list {
+    font-size: 0;
+}
+
+    #right-list > li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 15px;
+        font-size: 15px;
+        color: #fff;
     }
-        #right-list > li {
-            display: inline-block;
-            vertical-align: middle;
-            padding: 0 15px;
-            font-size: 15px;
-            color: #fff;
-        }
+
         #right-list > li a {
             color: #fff;
         }
+
             #right-list > li a:hover,
             #right-list > li .visible-cart:hover {
                 text-decoration: underline;
                 cursor: pointer;
             }
-    #right-list > li.sign a:not(:last-child):after {
-        content: "/";
-        padding: 0 5px;
-    }
+
+        #right-list > li.sign a:not(:last-child):after {
+            content: "/";
+            padding: 0 5px;
+        }
+
 .main-banner {
     margin-top: 4px;
 }
+
 .banner-left,
 .banner-right {
     display: inline-block;
     vertical-align: top;
 }
+
 .banner-left {
     width: 225px;
 }
+
     .banner-left > ul > li {
     }
+
         .banner-left > ul > li > a {
             display: block;
             padding: 7px 10px;
@@ -77,36 +94,255 @@
             color: #000;
             background: #ddd;
         }
-        .banner-left > ul > li > a svg {
-            position: absolute;
-            right: 5px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
+
+            .banner-left > ul > li > a svg {
+                position: absolute;
+                right: 5px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
     .banner-left > ul ul > li > a {
         display: block;
         color: #4a4a4a;
         padding: 7px 10px;
         border-bottom: 1px dotted #ccc;
+        background: #fff;
     }
+
     .banner-left > ul a:hover {
         color: red;
     }
-    .banner-right {
-        width: calc(100% - 230px);
-    }
+
+.banner-right {
+    width: calc(100% - 230px);
+}
+
     .banner-right .box-slide,
     .banner-right .box-ads {
         display: inline-block;
         vertical-align: top;
     }
+
     .banner-right .box-slide {
         width: calc(100% - 230px);
     }
+
     .banner-right .box-ads {
         width: 225px;
     }
-    .banner-right .box-ads .item:not(:last-child) {
-        margin-bottom: 4px;
+
+        .banner-right .box-ads .item:not(:last-child) {
+            margin-bottom: 4px;
+        }
+
+.product-cate {
+    margin-top: 20px;
+}
+
+    .product-cate > span {
+        font-size: 29px;
+        font-weight: bold;
+        color: #f44336;
     }
+
+.wrap-cate {
+    background: #fff;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.product-carousel .owl-item {
+    padding: 10px 5px;
+}
+
+    .product-carousel .owl-item .item {
+        padding: 10px;
+    }
+
+        .product-carousel .owl-item .item:hover {
+            box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+        }
+
+        .product-carousel .owl-item .item a {
+            color: #000;
+        }
+
+            .product-carousel .owl-item .item a > p,
+            .product-carousel .owl-item .item a .price-label {
+                margin-top: 10px;
+            }
+
+.add-to-cart-listing button {
+    background: rgb(237, 28, 36);
+    color: #fff;
+    width: 100%;
+    height: 36px;
+    margin-top: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+    .add-to-cart-listing button:hover {
+        border-color: rgb(237, 28, 36);
+        background: transparent;
+        color: rgb(237, 28, 36);
+    }
+
+.product-carousel .owl-nav .owl-prev,
+.product-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    opacity: .5;
+    transition: all .5s ease;
+}
+
+    .product-carousel .owl-nav .owl-prev:hover,
+    .product-carousel .owl-nav .owl-next:hover {
+        opacity: 1;
+    }
+
+.product-carousel .owl-nav .owl-prev {
+    left: 0;
+}
+
+.product-carousel .owl-nav .owl-next {
+    right: 0;
+}
+
+#footer {
+    background: #fff;
+    padding: 30px 15px;
+    margin-top: 10px;
+}
+
+    #footer .col-md-4 > h4 {
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        position: relative;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+        #footer .col-md-4 > h4:before {
+            position: absolute;
+            content: "";
+            background: #f1f1f1;
+            width: 50px;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+        }
+
+    #footer .col-md-4 ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    #footer .col-md-4 ul li > svg {
+        width: 25px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 4px;
+        color: rgb(11, 36, 156);
+    }
+
+    #footer .col-md-4 ul li > .content {
+        width: calc(100% - 30px);
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #footer .col-md-4 ul li:first-child > svg {
+        color: rgb(237, 28, 36);
+    }
+#copyright {
+    background: rgb(237, 28, 36);
+    padding: 10px 0;
+}
+    #copyright p, #copyright p a {
+        color: #fff;
+    }
+        #copyright p a:hover {
+            text-decoration: underline;
+        }
+        /**/
+.main-wrapper {
+    padding: 10px;
+    background: #fff;
+}
+.breadcrumb {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+    .breadcrumb li {
+        overflow: hidden;
+        vertical-align: top;
+        float: left;
+        display: inline-block;
+    }
+        .breadcrumb li a {
+            display: inline-block;
+            vertical-align: top;
+            white-space: nowrap;
+            font-size: 12px;
+            color: #008848;
+            font-weight: 600;
+            padding: 0 5px;
+            line-height: 40px;
+        }
+        .breadcrumb li a {
+            color: #288ad6;
+            font-weight: normal;
+            position: relative;
+            margin-right: 10px;
+            padding-right: 9px;
+        }
+            .breadcrumb li a:first-child {
+                padding-left: 0;
+            }
+            .breadcrumb li a:before, .breadcrumb li a:after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                border-left: 4px solid #979797;
+                position: absolute;
+                right: -4px;
+                top: 16px;
+            }
+            .breadcrumb li a:after {
+                border-left-width: 4px;
+                border-left-color: #fff;
+                right: -2px;
+                top: 16px;
+            }
+        .breadcrumb li:last-child a:before, .breadcrumb li:last-child a:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid transparent !important;
+            position: absolute;
+            right: -4px;
+            top: 16px;
+        }
