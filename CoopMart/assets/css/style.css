@@ -73,6 +73,7 @@ p {
     display: block;
     margin: 0 auto 10px;
     max-width: 100%;
+    height: auto !important;
 }
 
 .wrap-content table {

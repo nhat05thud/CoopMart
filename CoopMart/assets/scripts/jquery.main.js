@@ -3,6 +3,26 @@
         myfunload();
     });
 })(jQuery);
+$(".quantity-button").click(function () {
+    var input = $(this).parents(".quantity").find("input[type='number']");
+    var value = input.val() !== "" ? input.val() : 0;
+    if ($(this).hasClass("quantity-up")) {
+        input.val(parseInt(value) + 1);
+    }
+    else {
+        if (value > 1) {
+            input.val(parseInt(value) - 1);
+        }
+    }
+});
+$(".method-head").click(function () {
+    $accordion = $(this).next();
+    if (!$(this).children("input[type='radio']").prop("checked")) {
+        $(".method-content").slideUp();
+        $accordion.slideDown();
+        $(this).children("input[type='radio']").prop('checked', true);
+    }
+});
 function myfunload() {
     $(".box-slide").owlCarousel({
         loop: true,
@@ -30,6 +50,33 @@ function myfunload() {
                 items: 3
             },
             992: {
+                items: 5
+            }
+        }
+    });
+    $(".more-image").owlCarousel({
+        margin: 10,
+        lazyLoad: true,
+        loop: false,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 3
+            },
+            480: {
+                items: 3
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 4
+            },
+            1200: {
                 items: 5
             }
         }

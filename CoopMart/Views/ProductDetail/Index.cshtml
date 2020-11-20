@@ -1,14 +1,335 @@
-﻿@{
-    ViewBag.Title = "Index";
-}
-
-<div class="container">
+﻿<div class="container">
     <div class="main-wrapper">
         <ul class="breadcrumb">
             <li><a href="/" title="Trang chủ">Trang chủ</a></li>
-            <li><a href="/hai-san-dong-lanh">Thịt, hải sản, rau củ đông lạnh </a></li>
-            <li><a href="/hai-san-dong-lanh-thao-tien-foods">Thịt - hải sản đông lạnh Thảo Tiên Foods</a></li>
+            <li><a href="#">Thịt, hải sản, rau củ đông lạnh </a></li>
+            <li><a href="#">Thịt - hải sản đông lạnh Thảo Tiên Foods</a></li>
         </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="main-image">
+                    <a data-fancybox="gallery" href="https://via.placeholder.com/550x405">
+                        <img src="https://via.placeholder.com/550x405" alt="" />
+                    </a>
+                </div>
+                <div class="more-image owl-carousel">
+                    <div class="item">
+                        <a data-fancybox="gallery" href="https://via.placeholder.com/550x550">
+                            <img src="https://via.placeholder.com/90x90" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="https://via.placeholder.com/550x550">
+                            <img src="https://via.placeholder.com/90x90" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="https://via.placeholder.com/550x550">
+                            <img src="https://via.placeholder.com/90x90" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="https://via.placeholder.com/550x550">
+                            <img src="https://via.placeholder.com/90x90" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="https://via.placeholder.com/550x550">
+                            <img src="https://via.placeholder.com/90x90" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="https://via.placeholder.com/550x550">
+                            <img src="https://via.placeholder.com/90x90" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 class="nameproduct">Gầu bò Mỹ đông lạnh Thảo Tiên Foods khay 300g</h1>
+                <span class="expireddate">HSD còn 5 tháng</span>
+                <p class="boxprice">134.000 <sup>đ</sup></p>
+                <a class="choosebuy">CHỌN MUA</a>
+                <ul class="note">
+                    <li>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z" />
+                            <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                        Đặt hàng online giao tận nhà ĐÚNG GIỜ (nếu trễ đền 50.000<sup>đ</sup>)
+                    </li>
+                    <li>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-counterclockwise" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" />
+                            <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" />
+                        </svg>
+                        Đổi, trả sản phẩm trong 24 giờ
+                    </li>
+                </ul>
+                <div class="qc">
+                    <img src="https://via.placeholder.com/530x102" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <strong class="textinfpro">Sản phẩm liên quan</strong>
+        <div class="product-carousel owl-carousel">
+            <div class="item">
+                <a href="@Url.Action("Index","ProductDetail")">
+                    <img src="https://via.placeholder.com/185x185" alt="" />
+                    <p>Hàu sữa Thái Bình Dương Hasubi 300g</p>
+                    <div class="price-label">
+                        <p><b>49.500đ</b></p>
+                        <p><del>76.000đ</del></p>
+                    </div>
+                </a>
+                <div class="add-to-cart-listing">
+                    <button>Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="item">
+                <a href="@Url.Action("Index","ProductDetail")">
+                    <img src="https://via.placeholder.com/185x185" alt="" />
+                    <p>Hàu sữa Thái Bình Dương Hasubi 300g</p>
+                    <div class="price-label">
+                        <p><b>49.500đ</b></p>
+                        <p><del>76.000đ</del></p>
+                    </div>
+                </a>
+                <div class="add-to-cart-listing">
+                    <button>Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="item">
+                <a href="@Url.Action("Index","ProductDetail")">
+                    <img src="https://via.placeholder.com/185x185" alt="" />
+                    <p>Hàu sữa Thái Bình Dương Hasubi 300g</p>
+                    <div class="price-label">
+                        <p><b>49.500đ</b></p>
+                        <p><del>76.000đ</del></p>
+                    </div>
+                </a>
+                <div class="add-to-cart-listing">
+                    <button>Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="item">
+                <a href="@Url.Action("Index","ProductDetail")">
+                    <img src="https://via.placeholder.com/185x185" alt="" />
+                    <p>Hàu sữa Thái Bình Dương Hasubi 300g</p>
+                    <div class="price-label">
+                        <p><b>49.500đ</b></p>
+                        <p><del>76.000đ</del></p>
+                    </div>
+                </a>
+                <div class="add-to-cart-listing">
+                    <button>Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="item">
+                <a href="@Url.Action("Index","ProductDetail")">
+                    <img src="https://via.placeholder.com/185x185" alt="" />
+                    <p>Hàu sữa Thái Bình Dương Hasubi 300g</p>
+                    <div class="price-label">
+                        <p><b>49.500đ</b></p>
+                        <p><del>76.000đ</del></p>
+                    </div>
+                </a>
+                <div class="add-to-cart-listing">
+                    <button>Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="item">
+                <a href="@Url.Action("Index","ProductDetail")">
+                    <img src="https://via.placeholder.com/185x185" alt="" />
+                    <p>Hàu sữa Thái Bình Dương Hasubi 300g</p>
+                    <div class="price-label">
+                        <p><b>49.500đ</b></p>
+                        <p><del>76.000đ</del></p>
+                    </div>
+                </a>
+                <div class="add-to-cart-listing">
+                    <button>Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="item">
+                <a href="@Url.Action("Index","ProductDetail")">
+                    <img src="https://via.placeholder.com/185x185" alt="" />
+                    <p>Hàu sữa Thái Bình Dương Hasubi 300g</p>
+                    <div class="price-label">
+                        <p><b>49.500đ</b></p>
+                        <p><del>76.000đ</del></p>
+                    </div>
+                </a>
+                <div class="add-to-cart-listing">
+                    <button>Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="item">
+                <a href="@Url.Action("Index","ProductDetail")">
+                    <img src="https://via.placeholder.com/185x185" alt="" />
+                    <p>Hàu sữa Thái Bình Dương Hasubi 300g</p>
+                    <div class="price-label">
+                        <p><b>49.500đ</b></p>
+                        <p><del>76.000đ</del></p>
+                    </div>
+                </a>
+                <div class="add-to-cart-listing">
+                    <button>Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <strong class="textinfpro" id="specification">Thông tin sản phẩm</strong>
+        <div class="wrap-content">
+            <ul class="infoproduct nospeci">
+                <li>
+                    <span>Cách dùng</span>
+                    <div>Dùng để nấu các món ăn tuỳ thích. Không tái cấp đông sau khi đã rã đông.</div>
+                </li>
+                <li>
+                    <span>Thành phần</span>
+                    <div>Thịt bò Mỹ nhập khẩu 100%</div>
+                </li>
+                <li>
+                    <span>Nhiệt độ bảo quản</span>
+                    <div>-18 độ C hoặc ngăn đá tủ lạnh</div>
+                </li>
+                <li>
+                    <span>Khối lượng</span>
+                    <div>300g</div>
+                </li>
+                <li>
+                    <span>Thương hiệu</span>
+                    <div>Thảo Tiên Foods (Việt Nam)</div>
+                </li>
+                <li>
+                    <span>Nơi sản xuất</span>
+                    <div>Việt Nam</div>
+                </li>
+            </ul>
+            <p>Gầu bò được tách ra từ phần ức bởi một đường cắt giữa đốt sườn thứ 5 và 6, từ góc phải bả vai đến phần đầu tiên trên ống khuỷu. Đây là phần thịt có gân mỡ xen kẽ nhưng nhiều nạc hơn so với ba chỉ.</p>
+            <img src="https://via.placeholder.com/500x250" alt="" />
+        </div>
+        <strong class="textinfpro">4 Hỏi đáp sản phẩm</strong>
+        <div id="boxcomment">
+            <div class="cmtinfo">
+                <textarea placeholder="Mời bạn bình luận hoặc đặt câu hỏi..."></textarea>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-md-6 gender">
+                            <label><input type="radio" name="gender" /> Anh</label>
+                            <label><input type="radio" name="gender" /> Chị</label>
+                        </div>
+                        <div class="col-md-6 upimage text-right">
+                            <label for="upNotTitleCmt">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+                                    <path fill-rule="evenodd" d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
+                                </svg> Đính kèm ảnh
+                            </label>
+                            <input id="upNotTitleCmt" type="file" hidden="" accept="image/x-png, image/gif,image/jpeg" class="hide">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-item">
+                                <input type="text" class="txtFullName" placeholder="Họ tên (bắt buộc)">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-item">
+                                <input type="text" class="txtPhone" placeholder="Số điện thoại">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-item">
+                                <input type="email" class="txtEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="submit" class="submit">GỬI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-list">
+                <div class="item">
+                    <b>Nguyễn Thị Ánh Tuyết</b>
+                    <div class="wrap-content">Mình ở đồng nai muốn đặt hàng gửi trực tiếp về bạc liêu được không ạ</div>
+                    <div>
+                        <a href="javascript:void(0)">
+                            <span><b>1</b></span> Trả lời
+                        </a>
+                        <span class="com-dot"> • </span>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            <span><b>1</b></span> Thích
+                        </a>
+                        <span class="com-dot"> • </span>
+                        <span class="comment-time">10 ngày trước</span>
+                    </div>
+                    <div class="cmt-child">
+                        <div class="child item">
+                            <b> <i class="bhx-p-logocmt"></i> Trần Thị Kim Ngoan <em class="quantrivien">Quản trị viên</em> </b>
+                            <div>Chào bạn Tuyết,<br>Dạ hiện Bách Hóa XANH online chưa hỗ trợ giao hàng tại khu vực Bạc Liêu ạ, mong bạn thông cảm nhé.<br>Cảm ơn bạn đã quan tâm.</div>
+                            <div>
+                                <a href="javascript:void(0)">Trả lời</a>
+                                <span class="com-dot"> • </span>
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                    Hài lòng
+                                </a>
+                                <span class="com-dot"> • </span>
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                    Không hài lòng
+                                </a>
+                                <span class="com-dot"> • </span>
+                                <span class="comment-time">10 ngày trước</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <b>Nguyễn Thị Ánh Tuyết</b>
+                    <div class="wrap-content">Mình ở đồng nai muốn đặt hàng gửi trực tiếp về bạc liêu được không ạ</div>
+                    <div>
+                        <a href="javascript:void(0)">
+                            <span><b>1</b></span> Trả lời
+                        </a>
+                        <span class="com-dot"> • </span>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            <span><b>1</b></span> Thích
+                        </a>
+                        <span class="com-dot"> • </span>
+                        <span class="comment-time">10 ngày trước</span>
+                    </div>
+                    <div class="cmt-child">
+                        <div class="child item">
+                            <b> <i class="bhx-p-logocmt"></i> Trần Thị Kim Ngoan <em class="quantrivien">Quản trị viên</em> </b>
+                            <div>Chào bạn Tuyết,<br>Dạ hiện Bách Hóa XANH online chưa hỗ trợ giao hàng tại khu vực Bạc Liêu ạ, mong bạn thông cảm nhé.<br>Cảm ơn bạn đã quan tâm.</div>
+                            <div>
+                                <a href="javascript:void(0)">Trả lời</a>
+                                <span class="com-dot"> • </span>
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                    Hài lòng
+                                </a>
+                                <span class="com-dot"> • </span>
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                    Không hài lòng
+                                </a>
+                                <span class="com-dot"> • </span>
+                                <span class="comment-time">10 ngày trước</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

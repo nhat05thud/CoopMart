@@ -96,6 +96,12 @@
     <Content Include="assets\css\style.css" />
     <Content Include="assets\images\logo_1.svg" />
     <Content Include="assets\images\scrolltop.png" />
+    <Content Include="assets\libs\fancybox\css\jquery.fancybox.min.css" />
+    <Content Include="assets\libs\fancybox\scripts\jquery.fancybox.min.js" />
+    <Content Include="assets\libs\malihu\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="assets\libs\malihu\scripts\jquery.mCustomScrollbar.min.js" />
+    <Content Include="assets\libs\owl-carousel\css\owl.carousel.min.css" />
+    <Content Include="assets\libs\owl-carousel\scripts\owl.carousel.min.js" />
     <Content Include="assets\scripts\bootstrap.min.js" />
     <Content Include="assets\scripts\jquery.main.js" />
     <Content Include="assets\scripts\jquery.min.js" />
@@ -164,11 +170,16 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CheckoutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsDetailController.cs" />
     <Compile Include="Controllers\ProductDetailController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -192,6 +203,9 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\ProductDetail\Index.cshtml" />
+    <Content Include="Views\NewsDetail\Index.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Checkout\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -219,7 +233,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49852</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49852/</IISUrl>
+          <IISUrl>http://localhost:49856/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
