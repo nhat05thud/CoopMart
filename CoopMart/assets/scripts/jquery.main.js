@@ -23,6 +23,12 @@ $(".method-head").click(function () {
         $(this).children("input[type='radio']").prop('checked', true);
     }
 });
+$("#hero__categories__all").click(function () {
+    $(this).next().stop(true, false).slideToggle(300);
+});
+$("#contact-f").click(function () {
+    $(this).children(".contact-list").toggleClass("active");
+});
 function myfunload() {
     $(".box-slide").owlCarousel({
         loop: true,
@@ -44,9 +50,12 @@ function myfunload() {
         autoplaytimeout: 5000,
         responsive: {
             0: {
+                items: 1
+            },
+            420: {
                 items: 2
             },
-            600: {
+            768: {
                 items: 3
             },
             992: {

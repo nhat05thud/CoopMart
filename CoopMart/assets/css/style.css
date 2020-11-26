@@ -104,8 +104,8 @@ p {
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 50px;
-    right: 10px;
+    bottom: 0;
+    right: 17px;
     display: none;
     background: #333 url("/assets/images/scrolltop.png") no-repeat scroll center center;
     z-index: 9999999;
@@ -118,4 +118,67 @@ p {
         font-size: 30px;
         color: #fff;
         line-height: 35px;
+    }
+/*===========pager=======*/
+.pager {
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 0 10px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+    .pager.pagersroll {
+        background-color: #fff;
+        -webkit-box-shadow: 3px 0 5px #ddd; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow: 3px 0 5px #ddd; /* Firefox 3.5 - 3.6 */
+        box-shadow: 3px 0 5px #ddd; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        padding: 7px 0 5px !important;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .pager a {
+        color: #282828;
+        display: inline-block;
+        font-size: 14px;
+        vertical-align: top;
+        text-align: center;
+        height: 34px;
+        line-height: 34px;
+        min-width: 34px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.5);
+        margin: 0 2px;
+    }
+
+        .pager a:hover, .pager a.current {
+            color: #fff;
+            text-decoration: none;
+            background-color: #2d3877;
+        }
+
+    .pager .first, .pager .last,
+    .pager .prev, .pager .next {
+        padding: 0;
+        width: 34px;
+    }
+
+        .pager .first:hover, .pager .last:hover,
+        .pager .prev:hover, .pager .next:hover {
+            color: #ccc;
+            background-color: #fff;
+        }
+
+    .pager .first, .pager .last {
+        font-size: 12px;
+    }
+
+    .pager .prev, .pager .next {
+        font-size: 16px;
     }
