@@ -15,12 +15,15 @@ $(".quantity-button").click(function () {
         }
     }
 });
-$(".method-head").click(function () {
+$(".method-head").click(function () { 
     $accordion = $(this).next();
-    if (!$(this).children("input[type='radio']").prop("checked")) {
+    if (!$(this).hasClass("active")) {
         $(".method-content").slideUp();
         $accordion.slideDown();
+        $(".method-head input[type='radio']").prop('checked', false);
         $(this).children("input[type='radio']").prop('checked', true);
+        $(".method-head").removeClass("active");
+        $(this).addClass("active");
     }
 });
 $("#hero__categories__all").click(function () {
